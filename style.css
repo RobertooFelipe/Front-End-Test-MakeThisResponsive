@@ -1,0 +1,166 @@
+/*
+INSTRUCTIONS
+1. Make a copy of this codepen (you may have to create a free codepen account to do so)
+2. Using CSS properties alone, make this page responsive to different viewport widths. 
+3. Do not add or modify the HTML in any way
+4. Don't worry if it's not 100% perfect, get as close as you can
+3. Provide a link to your codepen
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 470px) {
+
+    .main-story,
+    .main-story img {
+        max-width: 300px;
+    }
+
+    .sub-stories {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .story-intro h1 {
+        font-size: 1em;
+    }
+
+    h1,
+    h2 {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .page-wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sub-story {
+        float: left;
+        width: 250px;
+        margin-right: 0px;
+        position: relative;
+        font-size: 80%;
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 820px) {
+    .sub-stories {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .main-story,
+    .main-story img {
+        max-width: 450px;
+    }
+
+    .story-intro h1 {
+        font-size: 1em;
+    }
+
+    h1,
+    h2 {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .page-wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sub-story {
+        float: left;
+        width: 250px;
+        margin-right: 0px;
+        position: relative;
+        font-size: 80%;
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width: 821px) {
+    .page-wrap {
+        width: 800px;
+        margin: auto;
+    }
+
+    .story-intro h1 {
+        font-size: 2.5em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    .sub-story {
+        float: left;
+        width: 250px;
+        margin-right: 25px;
+        position: relative;
+        font-size: 80%;
+    }
+}
+
+.main-story {
+    position: relative;
+    width: 800px;
+    margin: 0 0 25px 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    color: lightblue;
+}
+
+.story-intro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    color: white;
+}
+
+h1,
+h2 {
+    margin: 0 0 10px 0;
+}
+
+.story-intro p {
+    margin: 0;
+}
+
+.sub-stories {
+    overflow: hidden;
+    margin: 0 0 25px 0;
+}
+
+.last {
+    margin-right: 0;
+}
